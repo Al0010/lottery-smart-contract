@@ -45,8 +45,7 @@ Define a variable "index" which stores the winner. Then the ETHs within the cont
 Once the lottery draw is over, the array is restored, allowing the lottery to be restarted without the need to deploy again. 
 Finally, create a variable to return the ETH paid by each player if the lottery is suspended.
                                             
-    function pickWinner() public restricted {  
-        //require(msg.sender == manager);         
+    function pickWinner() public restricted {         
         uint index = random() % players.length;                                           
         players[index].transfer(this.balance);                       
         players = new address[](0);             
