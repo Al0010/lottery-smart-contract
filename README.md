@@ -17,7 +17,7 @@ Define the name of the contract, creating a variable 'manager' with a public add
       `address public manager;`     
       `address[] public players;`
     
-## Definition of the manufacturer 'Lottery'
+## Definition of the constructor 'Lottery'
 Define the constructor with the same name as the contract which gives 'manager' to the user who deploys our contract. 
 
     function Lottery() public {
