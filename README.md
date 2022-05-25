@@ -57,7 +57,7 @@ Finally, create a variable to return the ETH paid by each player if the lottery 
         _;                              
     }
 
-## Define the visibility function of players
+## Define the visibility function for the players
 Declare a public function that can be called by everyone and allows the players participating in the lottery to be displayed. 
 
     function getPlayers() public view returns (address[]) {
