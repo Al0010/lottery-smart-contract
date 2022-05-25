@@ -41,9 +41,9 @@ Define a new function called 'random' which can only be read and returns a rando
 
 ## Define the PickWinner function
 Create a new public function to enable the drawing of the winner. The extraction can only be performed by the address 'manager'.
-Define a viariable "index" which stores the winner. Then the ETHs within the contract are taken and sent to the winner.
+Define a variable "index" which stores the winner. Then the ETHs within the contract are taken and sent to the winner.
 Once the lottery draw is over, the array is restored, allowing the lottery to be restarted without the need to deploy again. 
-Finally, create a variable to return the ETH paid by each player in case the lottery is suspended.
+Finally, create a variable to return the ETH paid by each player if the lottery is suspended.
                                             
     function pickWinner() public restricted {  
         //require(msg.sender == manager);         
